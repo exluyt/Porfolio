@@ -1,0 +1,48 @@
+{
+    "header": {
+        "logo": "Arpad Kiss",
+        "nav": {
+            "home": "Inicio",
+            "education": "Educación",
+            "technologies": "Tecnologías",
+            "contact": "Contactame"
+        }
+    },
+    "main": {
+        "hero": {
+            "greeting": "¡Hola, soy Arpad Kiss!",
+            "description": "Soy un programador con conocimientos en diseño web y desarrollo de aplicaciones. Además, apunto hacia nuevos horizontes como la programación de videojuegos."
+        },
+        "education": {
+            "title": "Educación",
+            "timeline": [
+                {
+                    "year": "2021-2023",
+                    "title": "Bachillerato",
+                    "description": "Rama de ciencias sociales que me otorgo capacidades de trabajo en equipo y trabajar bajo presión"
+                },
+                {
+                    "year": "2023-Actualidad",
+                    "title": "Tecnico Superior en Desarrollo de Aplicaciones Multiplataforma",
+                    "description": "Adquiri conocimientos de programación Back-End (Java) y Front-End (HTML5, CSS, JavaScript) y también una visión real del trabajo en la actualidad"
+                },
+                {
+                    "year": "2024",
+                    "title": "OpenBootcamp",
+                    "description": "A través de vídeos mejoré mis capacidades de pensamiento crítico en un bootcamp de desarrollo de videojuegos en Unity con C#"
+                }
+            ]
+        },
+        "technologies": {
+            "title": "Tecnologías"
+        },
+        "contact": {
+            "title": "ContactaMe",
+            "description": "Si tienes alguna duda y/o quieres que forme parte de tu equipo , puedes rellenar el formulario o contactar a través de estos medios:"
+        }
+    },
+    "footer": {
+        "createdBy": "Sitio creado por Arpad Kiss",
+        "partiallyCreatedWithAI": "Parcialmente creado con IA"
+    }
+}
