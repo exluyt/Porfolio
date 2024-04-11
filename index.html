@@ -20,23 +20,23 @@ enviar mensaje,cambiar idioma esp,ingl-->
         <nav id="navbar">
             <h1 class="logo">Arpad <span>Kiss</span></h1>
             <ul id="nav">
-                <li><a href="#home">
-                        <p>Inicio</p>
+                <li><a id="navbar-home" href="#home">
+                        <p><span>Inicio</span></p>
                     </a></li>
-                <li><a href="#education">
-                        <p>Educación</p>
+                <li><a id="navbar-education" href="#education">
+                        <p><span>Educación</span></p>
                     </a></li>
-                <li><a href="#technologies">
-                        <p>Tecnologías</p>
+                <li><a id="navbar-technologies" href="#technologies">
+                        <p><span>Tecnologías</span></p>
                     </a></li>
-                <li><a href="#contact">
-                        <p>Contactame</p>
+                <li><a id="navbar-contact" href="#contact">
+                        <p><span>Contactame</span></p>
                     </a></li>
                 <li data-language="es">
                     <img src="img/es.svg" alt="Bandera de España" title="ESPAÑOL" class="flags" data-language="es">
                 </li>
                 <li data-language="en">
-                    <img src="img/gb.svg" alt="Bandera de Reino Unido" title="ENGLISH" class="flags" data-language="en">
+                    <img src="img/gb.svg" alt="Bandera de Reino Unido" title="ENGLISH" class="flags" data-language="en" id="uk-flag">
                 </li>
             </ul>
             <button class="bars" id="bars">
@@ -48,9 +48,9 @@ enviar mensaje,cambiar idioma esp,ingl-->
         <section class="hero_wrapper" id="home">
             <article class="hero">
                 <article class="hero_info">
-                    <h1>¡Hola, soy <span>Arpad Kiss!</span></h1>
-                    <h2>Soy <span id="element"></span></h2>
-                    <p> Soy un programador con conocimientos en diseño web y
+                    <h1 id="hero-hello">¡Hola, soy <span>Arpad Kiss!</span></h1>
+                    <h2 id="hero-typed">Soy <span id="element"></span></h2>
+                    <p id="hero-description"> Soy un programador con conocimientos en diseño web y
                         desarrollo de
                         aplicaciones. Además, apunto hacia nuevos horizontes como la programación de videojuegos.</p>
                     </p>
@@ -63,11 +63,11 @@ enviar mensaje,cambiar idioma esp,ingl-->
                         </a>
                     </article>
                     <article class="btns">
-                        <a href="pdf/ArpadKiss_CV programador.pdf" download target="_blank">
-                            <button class="button">CV</button>
+                        <a href="pdf/ArpadKiss_CV programador.pdf"  target="_blank">
+                            <button class="button" id="hero-resume">CV</button>
                         </a>
                         <a href="#contact">
-                            <button class="button">Contactame</button>
+                            <button class="button" id="hero-contact">Contactame</button>
                         </a>
                     </article>
                 </article>
@@ -78,24 +78,24 @@ enviar mensaje,cambiar idioma esp,ingl-->
         </section>
         <section>
             <article class="education" id="education">
-                <h2>Educación</h2>
+                <h2 id="education-title">Educación</h2>
                 <article class="timeline">
                     <article class="timeline_box left  ">
-                        <span>2021-2023</span>
-                        <h3>Bachillerato</h3>
-                        <p>Rama de ciencias sociales que me otorgo capacidades de trabajo en equipo y trabajar bajo
+                        <span id="education-year-0">2021-2023</span>
+                        <h3 id="education-title-0">Bachillerato</h3>
+                        <p id="education-description-0">Rama de ciencias sociales que me otorgo capacidades de trabajo en equipo y trabajar bajo
                             presión</p>
                     </article>
                     <article class="timeline_box right  ">
-                        <span>2023-Actualidad</span>
-                        <h3>Tecnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
-                        <p>Adquiri conocimientos de programación Back-End (Java) y Front-End (HTML5, CSS, JavaScript) y
+                        <span id="education-year-1">2023-Actualidad</span>
+                        <h3 id="education-title-1">Tecnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+                        <p id="education-description-1">Adquiri conocimientos de programación Back-End (Java) y Front-End (HTML5, CSS, JavaScript) y
                             también una visión real del trabajo en la actualidad</p>
                     </article>
                     <article class="timeline_box left  ">
-                        <span>2024</span>
-                        <h3>OpenBootcamp</h3>
-                        <p>A través de vídeos mejoré mis capacidades de pensamiento crítico en un bootcamp de desarrollo
+                        <span id="education-year-2">2024</span>
+                        <h3 id="education-title-2">OpenBootcamp</h3>
+                        <p id="education-description-2">A través de vídeos mejoré mis capacidades de pensamiento crítico en un bootcamp de desarrollo
                             de videojuegos en Unity con C#</p>
                     </article>
                     <!--Para futuras implementaciones
@@ -110,30 +110,30 @@ enviar mensaje,cambiar idioma esp,ingl-->
         </section>
         <section>
             <section class="technologies" id="technologies">
-                <h2>Tecnologías</h2>
+                <h2 id="technologies-title">Tecnologías</h2>
                 <article class="technologies_cards">
                     <article class="technologies_card">
-                        <h3>FRONT-END</h3>
+                        <h3 id="technologies-frontEnd">FRONT-END</h3>
                         <p>
                             <img src="img/HTML5.png" alt="Logo de HTML5" title="HTML5" width="15.5%">
                             <img src="img/CSS3.png" alt="Logo de CSS" title="CSS" width="11%">
                         </p>
                     </article>
                     <article class="technologies_card">
-                        <h3>BACK-END</h3>
+                        <h3 id="technologies-backEnd">BACK-END</h3>
                         <p>
                             <img src="img/java.png" alt="Logo de Java" title="JAVA" width="9%">
                         </p>
                     </article>
                     <article class="technologies_card">
-                        <h3>APRENDIENDO</h3>
+                        <h3 id="technologies-learning">APRENDIENDO</h3>
                         <p>
                             <img src="img/c.webp" alt="Logo de C#" title="C#" width="15%">
                             <img src="img/JavaScript.png" alt="Logo de JavaScript" title="JAVASCRIPT" width="15%">
                         </p>
                     </article>
                     <article class="technologies_card">
-                        <h3>HERRAMIENTAS</h3>
+                        <h3 id="technologies-tools">HERRAMIENTAS</h3>
                         <p>
                             <img src="img/Unity.png" alt="Logo de Unity" title="UNITY" width="15%">
                             <img src="img/VS.png" alt="Logo de Visual Studio Code" title="VISUAL STUDIO CODE"
@@ -152,12 +152,12 @@ enviar mensaje,cambiar idioma esp,ingl-->
 
         <section>
             <section class="contact" id="contact">
-                <h2>Contacta<span>Me</span></h2>
+                <h2 id="contact-title">Contacta<span>Me</span></h2>
 
                 <article class="contact_container">
                     <article class="contact_detail">
                         <h3>Contactame</h3>
-                        <h4 id="spaceright">Si tienes alguna duda y/o quieres que forme parte de tu equipo , puedes
+                        <h4 id="contact-description">Si tienes alguna duda y/o quieres que forme parte de tu equipo , puedes
                             rellenar el
                             formulario o contactar a través de estos medios:</h4>
                         <article>
@@ -176,11 +176,11 @@ enviar mensaje,cambiar idioma esp,ingl-->
                         </article>
                     </article>
                     <form class="contact_form">
-                        <input type="text" placeholder="Nombre" required name="name" autocomplete="name">
-                        <input type="email" placeholder="Email" required name="email" autocomplete="email">
-                        <input type="text" placeholder="Asunto" name="subject">
-                        <textarea name="message" id="form" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <button class="button" type="submit">Envia mensaje</button>
+                        <input type="text" placeholder="Nombre" required name="name" autocomplete="name" autocapitalize="words" id="contact-form-name">
+                        <input type="email" placeholder="Email" required name="email" autocomplete="email" id="contact-form-email">
+                        <input type="text" placeholder="Asunto" name="subject" id="contact-form-subject"> 
+                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje" id="contact-form-message"></textarea>
+                        <button class="button" type="submit" id="contact-form-button">Envia mensaje</button>
                     </form>
                 </article>
             </section>
@@ -209,8 +209,8 @@ enviar mensaje,cambiar idioma esp,ingl-->
                 <p>Contactme</p>
             </a>
         </section>
-        <p><span>Sitio</span> creado por <span>Arpad Kiss</span></p>
-        <p id="small">Parcialmente creado con IA</p>
+        <p id="footer-createdBy"><span>Sitio</span> creado por <span>Arpad Kiss</span></p>
+        <p id="small" >Parcialmente creado con IA</p>
     </footer>
 
     <!--Scripts (js) para diversas funcionalidades-->
