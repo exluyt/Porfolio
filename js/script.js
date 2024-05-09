@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             loop: true
         });
     });
-    fetch('../languages/en.json')
+    fetch('https://raw.githubusercontent.com/exluyt/Porfolio/main/languages/en.json')
         .then(response => response.json())
         .then(translations => {
             document.querySelector('#uk-flag').addEventListener('click', () => {
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#small').textContent = translations.footer.partiallyCreated;
             });
         });
-    fetch('../languages/es.json')
+    fetch('https://raw.githubusercontent.com/exluyt/Porfolio/main/languages/es.json')
         .then(response => response.json())
         .then(translations => {
             document.querySelector('#es-flag').addEventListener('click', () => {
