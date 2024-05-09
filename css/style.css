@@ -18,11 +18,14 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --main-color: #daaf54;
+        --main-color: #fa9e0a;
         --text-color: black;
-        --background-color: white;
+        --background-color: rgb(255, 255, 255);
         --hover-color: black;
         --footer-color: #eeeeee;
+    }
+    footer p span {
+        color: #C2790A;
     }
 }
 
@@ -129,6 +132,7 @@ ul li p:hover:after {
     width: 180px;
     height: 50px;
     background-color: var(--main-color);
+    color: black;
     border-radius: 25px;
     border: none;
     font-size: 18px;
