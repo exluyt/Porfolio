@@ -3,14 +3,14 @@
         "home": "Inicio",
         "education": "Educación",
         "technologies": "Tecnologías",
-        "contact": "Contactame"
+        "contact": "Contáctame"
     },
     "hero": {
         "hello": "¡Hola, soy",
         "typed":"Soy",
         "description": "Soy un programador con conocimientos en diseño web y desarrollo de aplicaciones. Además, apunto hacia nuevos horizontes como la programación de videojuegos.",
         "resume": "CV",
-        "contact": "Contactame"
+        "contact": "Contáctame"
     },  
     "education": {
         "title": "Educación",
@@ -40,7 +40,7 @@
         "tools": "HERRAMIENTAS"
     },
     "contact": {
-        "title": "Contacta",
+        "title": "Contácta",
         "me": "Me",
         "description": "Si tienes alguna duda y/o quieres que forme parte de tu equipo , puedes rellenar el formulario o contactar a través de estos medios:",
         "form": {
