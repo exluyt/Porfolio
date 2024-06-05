@@ -24,6 +24,7 @@
         --hover-color: black;
         --footer-color: #eeeeee;
     }
+
     footer p span {
         color: #C2790A;
     }
@@ -70,7 +71,7 @@ nav {
 }
 
 .logo {
-    color: text-color;
+    color: var(--text-color);
     font-size: 30px;
     cursor: pointer;
     transition: all .4s ease-in-out;
