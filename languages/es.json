@@ -1,59 +1,59 @@
 {
-    "navbar": {
-        "home": "Inicio",
-        "education": "Educación",
-        "technologies": "Tecnologías",
-        "contact": "Contáctame"
-    },
-    "hero": {
-        "hello": "¡Hola, soy",
-        "typed":"Soy",
-        "description": "Soy un programador con conocimientos en diseño web y desarrollo de aplicaciones. Además, apunto hacia nuevos horizontes como la programación de videojuegos.",
-        "resume": "CV",
-        "contact": "Contáctame"
-    },  
-    "education": {
-        "title": "Educación",
-        "timeline": [
-            {
-                "year": "2021-2023",
-                "title": "Bachillerato",
-                "description": "Rama de ciencias sociales que me otorgo capacidades de trabajo en equipo y trabajar bajo presiónre"
-            },
-            {
-                "year": "2023-Actualidad",
-                "title": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
-                "description": "Adquirí conocimientos de programación Back-End (Java) y Front-End (HTML5, CSS, JavaScript) y también una visión real del trabajo en la actualidad"
-            },
-            {
-                "year": "2024",
-                "title": "OpenBootcamp",
-                "description": "A través de vídeos mejoré mis capacidades de pensamiento crítico en un bootcamp de desarrollo de videojuegos en Unity con C#"
-            }
-        ]
-    },
-    "technologies": {
-        "title": "Tecnologías",
-        "frontEnd": "FRONT-END",
-        "backEnd": "BACK-END",
-        "learning": "APRENDIENDO",
-        "tools": "HERRAMIENTAS"
-    },
-    "contact": {
-        "title": "Contácta",
-        "me": "Me",
-        "description": "Si tienes alguna duda y/o quieres que forme parte de tu equipo , puedes rellenar el formulario o contactar a través de estos medios:",
-        "form": {
-            "name": "Nombre",
-            "email": "Email",
-            "subject": "Asunto",
-            "message": "Mensaje",
-            "button": "Enviar mensaje"
-        }
-    },
-    "footer": {
-        "site": "Sitio",
-        "createdBy": "creado por",
-        "partiallyCreated": "Parcialmente creado con IA"
+  "navbar": {
+    "home": "Inicio",
+    "education": "Educación",
+    "technologies": "Tecnologías",
+    "contact": "Contáctame"
+  },
+  "hero": {
+    "hello": "¡Hola, soy",
+    "typed": "Soy",
+    "description": "Soy un programador con conocimientos en diseño web y desarrollo de aplicaciones. Además, apunto hacia nuevos horizontes como la programación de videojuegos.",
+    "resume": "CV",
+    "contact": "Contáctame"
+  },
+  "education": {
+    "title": "Educación",
+    "timeline": [
+      {
+        "year": "2021-2023",
+        "title": "Bachillerato",
+        "description": "Rama de ciencias sociales que me otorgo capacidades de trabajo en equipo y trabajar bajo presiónre"
+      },
+      {
+        "year": "2023-Actualidad",
+        "title": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
+        "description": "Adquirí conocimientos de programación Back-End (Java) y Front-End (HTML5, CSS, JavaScript) y también una visión real del trabajo en la actualidad"
+      },
+      {
+        "year": "2024",
+        "title": "OpenBootcamp",
+        "description": "A través de vídeos mejoré mis capacidades de pensamiento crítico en un bootcamp de desarrollo de videojuegos en Unity con C#"
+      }
+    ]
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "frontEnd": "FRONT-END",
+    "backEnd": "BACK-END",
+    "learning": "APRENDIENDO",
+    "tools": "HERRAMIENTAS"
+  },
+  "contact": {
+    "title": "Contácta",
+    "me": "Me",
+    "description": "Si tienes alguna duda y/o quieres que forme parte de tu equipo , puedes rellenar el formulario o contactar a través de estos medios:",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "button": "Enviar mensaje"
     }
+  },
+  "footer": {
+    "site": "Sitio",
+    "createdBy": "creado por",
+    "partiallyCreated": "Parcialmente creado con IA"
+  }
 }

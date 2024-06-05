@@ -1,59 +1,59 @@
 {
-    "navbar": {
-        "home": "Home",
-        "education": "Education",
-        "technologies": "Technologies",
-        "contact": "Contact me"
-    },
-    "hero": {
-        "hello": "Hello, I'm",
-        "typed":"I'm",
-        "description": "I'm a programmer with knowledge in web design and application development. Also, I aim towards new horizons like video game programming.",
-        "resume": "Resume",
-        "contact": "Contact me"
-    },  
-    "education": {
-        "title": "Education",
-        "timeline": [
-            {
-                "year": "2021-2023",
-                "title": "Bachelor's Degree",
-                "description": "Social sciences branch that gave me teamwork skills and ability to work under pressure"
-            },
-            {
-                "year": "2023-Present",
-                "title": "Higher Technician in Multiplatform Application Development",
-                "description": "I acquired knowledge of Back-End programming (Java) and Front-End (HTML5, CSS, JavaScript) and also a real vision of work today"
-            },
-            {
-                "year": "2024",
-                "title": "OpenBootcamp",
-                "description": "Through videos I improved my critical thinking skills in a video game development bootcamp in Unity with C#"
-            }
-        ]
-    },
-    "technologies": {
-        "title": "Technologies",
-        "frontEnd": "FRONT-END",
-        "backEnd": "BACK-END",
-        "learning": "LEARNING",
-        "tools": "TOOLS"
-    },
-    "contact": {
-        "title": "Contact",
-        "me": "Me",
-        "description": "If you have any questions and/or want me to be part of your team, you can fill out the form or contact through these means:",
-        "form": {
-            "name": "Name",
-            "email": "Email",
-            "subject": "Subject",
-            "message": "Message",
-            "button": "Send message"
-        }
-    },
-    "footer": {
-        "site": "Site",
-        "createdBy": "created by",
-        "partiallyCreated": "Partially created with AI"
+  "navbar": {
+    "home": "Home",
+    "education": "Education",
+    "technologies": "Technologies",
+    "contact": "Contact me"
+  },
+  "hero": {
+    "hello": "Hello, I'm",
+    "typed": "I'm",
+    "description": "I'm a programmer with knowledge in web design and application development. Also, I aim towards new horizons like video game programming.",
+    "resume": "Resume",
+    "contact": "Contact me"
+  },
+  "education": {
+    "title": "Education",
+    "timeline": [
+      {
+        "year": "2021-2023",
+        "title": "Bachelor's Degree",
+        "description": "Social sciences branch that gave me teamwork skills and ability to work under pressure"
+      },
+      {
+        "year": "2023-Present",
+        "title": "Higher Technician in Multiplatform Application Development",
+        "description": "I acquired knowledge of Back-End programming (Java) and Front-End (HTML5, CSS, JavaScript) and also a real vision of work today"
+      },
+      {
+        "year": "2024",
+        "title": "OpenBootcamp",
+        "description": "Through videos I improved my critical thinking skills in a video game development bootcamp in Unity with C#"
+      }
+    ]
+  },
+  "technologies": {
+    "title": "Technologies",
+    "frontEnd": "FRONT-END",
+    "backEnd": "BACK-END",
+    "learning": "LEARNING",
+    "tools": "TOOLS"
+  },
+  "contact": {
+    "title": "Contact",
+    "me": "Me",
+    "description": "If you have any questions and/or want me to be part of your team, you can fill out the form or contact through these means:",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "button": "Send message"
     }
+  },
+  "footer": {
+    "site": "Site",
+    "createdBy": "created by",
+    "partiallyCreated": "Partially created with AI"
+  }
 }
