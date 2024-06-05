@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Porfolio de Arpad Kiss">
+    <meta name="keywords"
+        content="Arpad Kiss, programador, desarrollo web, desarrollo de aplicaciones, desarrollador, videojuegos, porfolio, portfolio, developer, web developer, app developer, videogames">
+    <meta name="author" content="Arpad Kiss">
     <!--Css para decoración de la página-->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Libreria para los iconos de RRSS y otros elementos-->
+    <!-- Libreria para los iconos de RRSS y para swiper-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/swiper.css" />
     <title>Arpad Kiss</title>
-
-
-
-    <!-- que funcione el 
-enviar mensaje,cambiar idioma esp,ingl-->
+    <link rel="icon" href="./js/swiper.js">
 
 <body>
     <header class="header_wrapper">
@@ -24,20 +24,25 @@ enviar mensaje,cambiar idioma esp,ingl-->
                 <li><a id="navbar-home" href="#home">
                         <p><span>Inicio</span></p>
                     </a></li>
-                <li><a id="navbar-education" href="#education">
-                        <p><span>Educación</span></p>
-                    </a></li>
                 <li><a id="navbar-technologies" href="#technologies">
                         <p><span>Tecnologías</span></p>
                     </a></li>
+                <li><a id="navbar-projects" href="#projects">
+                        <p><span>Proyectos</span></p>
+                    </a></li>
+                <li><a id="navbar-education" href="#education">
+                        <p><span>Educación</span></p>
+                    </a></li>
                 <li><a id="navbar-contact" href="#contact">
-                        <p><span>Contactame</span></p>
+                        <p><span>Contáctame</span></p>
                     </a></li>
                 <li data-language="es">
-                    <img src="img/es.svg" alt="Bandera de España" title="ESPAÑOL" class="flags" data-language="es" id="es-flag">
+                    <img src="img/es.svg" alt="Bandera de España" title="ESPAÑOL" class="flags" data-language="es"
+                        id="es-flag">
                 </li>
                 <li data-language="en">
-                    <img src="img/gb.svg" alt="Bandera de Reino Unido" title="ENGLISH" class="flags" data-language="en" id="uk-flag">
+                    <img src="img/gb.svg" alt="Bandera de Reino Unido" title="ENGLISH" class="flags" data-language="en"
+                        id="uk-flag">
                 </li>
             </ul>
             <button class="bars" id="bars">
@@ -53,10 +58,11 @@ enviar mensaje,cambiar idioma esp,ingl-->
                     <h2 id="hero-typed">Soy <span id="element"></span></h2>
                     <p id="hero-description"> Soy un programador con conocimientos en diseño web y
                         desarrollo de
-                        aplicaciones. Además, apunto hacia nuevos horizontes como la programación de videojuegos.</p>
+                        aplicaciones. Además, apunto hacia nuevos horizontes como la programación de videojuegos.
                     </p>
                     <article class="social_icons">
-                        <a href="https://www.linkedin.com/in/arpad-kiss-dev/"  aria-label="Mi perfil de linkedIn" target="_blank">
+                        <a href="https://www.linkedin.com/in/arpad-kiss-dev/" aria-label="Mi perfil de linkedIn"
+                            target="_blank">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                         <a href="https://github.com/exluyt" aria-label="Mi perfil de GitHub" target="_blank">
@@ -64,11 +70,11 @@ enviar mensaje,cambiar idioma esp,ingl-->
                         </a>
                     </article>
                     <article class="btns">
-                        <a href="pdf/ArpadKiss_CV programador.pdf"  target="_blank">
+                        <a href="pdf/ArpadKiss_CV_Programador.pdf" target="_blank">
                             <button class="button" id="hero-resume">CV</button>
                         </a>
                         <a href="#contact">
-                            <button class="button" id="hero-contact">Contactame</button>
+                            <button class="button" id="hero-contact">Contáctame</button>
                         </a>
                     </article>
                 </article>
@@ -77,6 +83,7 @@ enviar mensaje,cambiar idioma esp,ingl-->
                 </article>
             </article>
         </section>
+
         <section>
             <article class="education" id="education">
                 <h2 id="education-title">Educación</h2>
@@ -84,19 +91,22 @@ enviar mensaje,cambiar idioma esp,ingl-->
                     <article class="timeline_box left  ">
                         <span id="education-year-0">2021-2023</span>
                         <h3 id="education-title-0">Bachillerato</h3>
-                        <p id="education-description-0">Rama de ciencias sociales que me otorgo capacidades de trabajo en equipo y trabajar bajo
+                        <p id="education-description-0">Rama de ciencias sociales que me otorgo capacidades de trabajo
+                            en equipo y trabajar bajo
                             presión</p>
                     </article>
                     <article class="timeline_box right  ">
                         <span id="education-year-1">2023-Actualidad</span>
                         <h3 id="education-title-1">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
-                        <p id="education-description-1">Adquirí conocimientos de programación Back-End (Java) y Front-End (HTML5, CSS, JavaScript) y
+                        <p id="education-description-1">Adquirí conocimientos de programación Back-End (Java) y
+                            Front-End (HTML5, CSS, JavaScript) y
                             también una visión real del trabajo en la actualidad</p>
                     </article>
                     <article class="timeline_box left  ">
                         <span id="education-year-2">2024</span>
                         <h3 id="education-title-2">OpenBootcamp</h3>
-                        <p id="education-description-2">A través de vídeos mejoré mis capacidades de pensamiento crítico en un bootcamp de desarrollo
+                        <p id="education-description-2">A través de vídeos mejoré mis capacidades de pensamiento crítico
+                            en un bootcamp de desarrollo
                             de videojuegos en Unity con C#</p>
                     </article>
                     <!--Para futuras implementaciones
@@ -150,37 +160,122 @@ enviar mensaje,cambiar idioma esp,ingl-->
             </section>
         </section>
 
+        <section>
+            <div class="project_main" id="projects">
+                <h2>Proyectos</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project_sec">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur odit harum facere soluta possimus numquam quia atque nulla. Autem delectus eligendi tempore. Fugiat numquam commodi amet perferendis quae illo nisi.</p>
+                                <div class="project_user">
+                                    <div>
+                                        <h4>Nombre prueba</h4>
+                                        <p>JavaScript</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project_sec">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, placeat fuga. Harum ut praesentium perspiciatis tenetur explicabo consectetur, asperiores ipsam commodi sed consequuntur et architecto, voluptatibus quos, voluptatum at eos!</p>
+                                <div class="project_user">
+                                    <div>
+                                        <h4>Nombre poyecto</h4>
+                                        <p>Java</p>
+                                        <p>Node</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project_sec">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error vitae accusamus? Corporis mollitia consectetur natus beatae iure distinctio rerum id nisi blanditiis deserunt suscipit incidunt illum sunt, rem cum.</p>
+                                <div class="project_user">
+                                    <div>
+                                        <h4>Nombre prueba de proyecto</h4>
+                                        <p>Tecnologías</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project_sec">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consequatur eius, quo culpa unde error iusto voluptatibus doloremque deserunt ipsam, dolores a reprehenderit sint? Vitae in architecto laborum magnam quod!</p>
+                                <div class="project_user">
+                                    <div>
+                                        <h4>Otro proyect futuro</h4>
+                                        <p>Java</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <article class="education" id="education">
+                <h2 id="education-title">Educación</h2>
+                <article class="timeline">
+                    <article class="timeline_box left  ">
+                        <span id="education-year-0">2021-2023</span>
+                        <h3 id="education-title-0">Bachillerato</h3>
+                        <p id="education-description-0">Rama de ciencias sociales que me otorgo capacidades de trabajo
+                            en equipo y trabajar bajo
+                            presión</p>
+                    </article>
+                    <article class="timeline_box right  ">
+                        <span id="education-year-1">2023-Actualidad</span>
+                        <h3 id="education-title-1">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+                        <p id="education-description-1">Adquirí conocimientos de programación Back-End (Java) y
+                            Front-End (HTML5, CSS, JavaScript) y
+                            también una visión real del trabajo en la actualidad</p>
+                    </article>
+                    <article class="timeline_box left  ">
+                        <span id="education-year-2">2024</span>
+                        <h3 id="education-title-2">OpenBootcamp</h3>
+                        <p id="education-description-2">A través de vídeos mejoré mis capacidades de pensamiento crítico
+                            en un bootcamp de desarrollo
+                            de videojuegos en Unity con C#</p>
+                    </article>
+                </article>
+            </article>
+        </section>
 
         <section>
             <section class="contact" id="contact">
-                <h2 id="contact-title">Contacta<span>Me</span></h2>
+                <h2 id="contact-title">Contácta<span>Me</span></h2>
 
                 <article class="contact_container">
                     <article class="contact_detail">
-                        <h3>Contactame</h3>
-                        <h4 id="contact-description">Si tienes alguna duda y/o quieres que forme parte de tu equipo , puedes
+                        <h3>Contáctame</h3>
+                        <h4 id="contact-description">Si tienes alguna duda y/o quieres que forme parte de tu equipo ,
+                            puedes
                             rellenar el
                             formulario o contactarme a través de estos medios:</h4>
                         <article>
-                            <i class="fa-solid fa-map-pin" alt="Símbolo de chincheta para ubicación"
-                                title="UBICACIÓN"></i>
+                            <i class="fa-solid fa-map-pin" title="UBICACIÓN"></i>
                             <p class="size" id="spacemad">Madrid</p>
                         </article>
                         <article>
-                            <i class="fa-solid fa-phone" alt="Símbolo de teléfono" title="TELÉFONO"></i>
+                            <i class="fa-solid fa-phone" title="TELÉFONO"></i>
                             <p>+34 672 89 09 24</p>
                         </article>
                         <article>
-                            <i class="fa-solid fa-envelope-open-text" alt="Simbolo de carta para correo electrónico"
-                                title="EMAIL"></i>
+                            <i class="fa-solid fa-envelope-open-text" title="EMAIL"></i>
                             <p>kissarpico22@gmail.com</p>
                         </article>
                     </article>
                     <form class="contact_form">
-                        <input type="text" placeholder="Nombre" required name="name" autocomplete="name" autocapitalize="words" id="contact-form-name">
-                        <input type="email" placeholder="Email" required name="email" autocomplete="email" id="contact-form-email">
-                        <input type="text" placeholder="Asunto" name="subject" id="contact-form-subject"> 
-                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje" id="contact-form-message"></textarea>
+                        <input type="text" placeholder="Nombre" required name="name" autocomplete="name"
+                            autocapitalize="words" id="contact-form-name">
+                        <input type="email" placeholder="Email" required name="email" autocomplete="email"
+                            id="contact-form-email">
+                        <input type="text" placeholder="Asunto" name="subject" id="contact-form-subject">
+                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje"
+                            id="contact-form-message"></textarea>
                         <button class="button" type="submit" id="contact-form-button">Envia mensaje</button>
                     </form>
                 </article>
@@ -200,23 +295,23 @@ enviar mensaje,cambiar idioma esp,ingl-->
             <a href="#home">
                 <p>Inicio</p>
             </a>
-            <a href="#education">
-                <p>Educación</p>
-            </a>
             <a href="#technologies">
                 <p>Tecnologías</p>
             </a>
+            <a href="#education">
+                <p>Educación</p>
+            </a>
             <a href="#contact">
-                <p>Contactme</p>
+                <p>Contáctme</p>
             </a>
         </section>
         <p id="footer-createdBy"><span>Sitio</span> creado por <span>Arpad Kiss</span></p>
-        <p id="small" >Parcialmente creado con IA</p>
+        <p id="small">Parcialmente creado con IA</p>
     </footer>
 
     <!--Scripts (js) para diversas funcionalidades-->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/typed.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="js/script.js"></script>
 </body>
 

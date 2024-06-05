@@ -24,6 +24,7 @@
         --hover-color: black;
         --footer-color: #eeeeee;
     }
+
     footer p span {
         color: #C2790A;
     }
@@ -70,7 +71,7 @@ nav {
 }
 
 .logo {
-    color: text-color;
+    color: var(--text-color);
     font-size: 30px;
     cursor: pointer;
     transition: all .4s ease-in-out;
@@ -428,6 +429,63 @@ ul li p:hover:after {
     margin-bottom: 10px;
 }
 
+.project_main{
+    width: 1600px;
+    padding: 80px 0;
+    color: #fff;
+}
+.project_main h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project_detail p{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+}
+.project_slider{
+    width: 66%;
+    display: flex;
+    gap: 2%;
+}
+.swiper {
+    width: 100%;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: row;
+}
+.project_sec{
+    border: 1px solid var(--main-color);
+    padding: 30px;
+}
+.project_sec:hover{
+    box-shadow: 0 0 40px var(--main-color) inset;
+}
+
+.project_sec p{
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.project_user{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.project_user img{
+    border-radius: 50%;
+}
+.project_user h4{
+    font-size: 20px;
+    color: var(--main-color);
+}
+
 /* contact */
 
 .contact {
@@ -616,7 +674,7 @@ footer p span {
 
     .education,
     .technologies,
-    .testimonial_main,
+    .project_main,
     .contact {
         width: 100%;
         padding: 80px 5%;
@@ -802,13 +860,13 @@ footer p span {
 
 @media (max-width: 500px) {
 
-    .testimonial_main h2,
+    .project_main h2,
     .technologies h2,
     .education h2 {
         font-size: 40px;
     }
 
-    .testimonial_sec {
+    .project_sec {
         width: 90%;
         margin-left: 5%;
     }

@@ -1,4 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        },
+    });
+
     let navbar = document.querySelector("#navbar")
 
     window.addEventListener("scroll", () => {
@@ -29,6 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
         typeSpeed: 50,
         loop: true
     });
+    
+
     document.querySelector('#uk-flag').addEventListener('click', function () {
         typed.destroy();
         typed = new Typed('#element', {
