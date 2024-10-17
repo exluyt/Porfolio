@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true
     });
 
-    fetch("https://raw.githubusercontent.com/exluyt/Porfolio/refs/heads/main/languages/en.json")
+    fetch("../languages/en.json")
         .then(response => response.json())
         .then(translations => {
             document.querySelector('#uk-flag').addEventListener('click', () => {
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-    fetch('https://raw.githubusercontent.com/exluyt/Porfolio/refs/heads/main/languages/es.json')
+    fetch('../languages/es.json')
         .then(response => response.json())
         .then(translations => {
             document.querySelector('#es-flag').addEventListener('click', () => {
