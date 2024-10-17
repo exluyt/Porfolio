@@ -3,14 +3,18 @@
         "home": "Inicio",
         "education": "Educación",
         "technologies": "Tecnologías",
+        "projects": "Proyectos",
         "contact": "Contáctame"
     },
     "hero": {
         "hello": "¡Hola, soy",
         "typed":"Soy",
-        "description": "Soy un programador con conocimientos en diseño web y desarrollo de aplicaciones. Además, apunto hacia nuevos horizontes como la programación de videojuegos.",
+        "description": "Soy un programador con conocimientos en diseño web y desarrollo de Android y iOS. Además, apunto hacia nuevos horizontes como la programación de videojuegos.",
         "resume": "CV",
         "contact": "Contáctame"
+    }, 
+    "projects": {
+        "title": "Proyectos"
     },  
     "education": {
         "title": "Educación",
@@ -42,6 +46,7 @@
     "contact": {
         "title": "Contácta",
         "me": "Me",
+        "subtitle": "Contáctame",
         "description": "Si tienes alguna duda y/o quieres que forme parte de tu equipo , puedes rellenar el formulario o contactar a través de estos medios:",
         "form": {
             "name": "Nombre",
@@ -52,6 +57,11 @@
         }
     },
     "footer": {
+        "home": "Inicio",
+        "technologies": "Tecnologías",
+        "projects": "Proyectos",
+        "education": "Educación",
+        "contact": "Contáctame",
         "site": "Sitio",
         "createdBy": "creado por",
         "partiallyCreated": "Parcialmente creado con IA"

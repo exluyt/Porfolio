@@ -20,55 +20,37 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 
-    let navbar = document.querySelector("#navbar")
+    let navbar = document.querySelector("#navbar");
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 10) {
-            navbar.classList.add("sticky")
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
         }
-        else {
-            navbar.classList.remove("sticky")
-        }
-    })
+    });
 
-    let bars = document.querySelector("#bars")
-    let nav = document.querySelector("#nav")
-    let nav_links = document.querySelectorAll("#nav a")
+    let bars = document.querySelector("#bars");
+    let nav = document.querySelector("#nav");
+    let nav_links = document.querySelectorAll("#nav a");
 
     bars.addEventListener("click", () => {
-        nav.classList.toggle("show")
-    })
+        nav.classList.toggle("show");
+    });
 
     nav_links.forEach((links) => {
         links.addEventListener("click", () => {
-            nav.classList.toggle('show')
-        })
-    })
+            nav.classList.toggle("show");
+        });
+    });
 
     let typed = new Typed('#element', {
         strings: ['Desarrollador', 'Curioso', 'Creativo'],
         typeSpeed: 50,
         loop: true
     });
-    
 
-    document.querySelector('#uk-flag').addEventListener('click', function () {
-        typed.destroy();
-        typed = new Typed('#element', {
-            strings: ['Developer', 'Curious', 'Creative'],
-            typeSpeed: 50,
-            loop: true
-        });
-    });
-    document.querySelector('#es-flag').addEventListener('click', function () {
-        typed.destroy();
-        typed = new Typed('#element', {
-            strings: ['Desarrollador', 'Curioso', 'Creativo'],
-            typeSpeed: 50,
-            loop: true
-        });
-    });
-    fetch('https://raw.githubusercontent.com/exluyt/Porfolio/main/languages/en.json')
+    fetch("../languages/en.json")
         .then(response => response.json())
         .then(translations => {
             document.querySelector('#uk-flag').addEventListener('click', () => {
@@ -76,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#navbar-home span').textContent = translations.navbar.home;
                 document.querySelector('#navbar-education span').textContent = translations.navbar.education;
                 document.querySelector('#navbar-technologies span').textContent = translations.navbar.technologies;
+                document.querySelector('#navbar-projects span').textContent = translations.navbar.projects;
                 document.querySelector('#navbar-contact span').textContent = translations.navbar.contact;
 
                 // Sección de inicio
@@ -86,7 +69,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#hero-resume').textContent = translations.hero.resume;
                 document.querySelector('#hero-contact').textContent = translations.hero.contact;
 
+                // Links
+                document.querySelector('#resume-link').setAttribute('href', 'pdf/ArpadKiss_Resume_developer.pdf');
+                document.querySelector('#linkedin-link').setAttribute('href', 'https://www.linkedin.com/in/arpad-kiss-dev/?locale=en_US');
 
+                // Traducir "Soy" a "I'm"
+                document.querySelector('#hero-typed').innerHTML = translations.hero.typed + ' <span id="element"></span>';
+
+                // Reinicializar Typed.js con las nuevas cadenas
+                typed.destroy();
+                typed = new Typed('#element', {
+                    strings: ['Developer', 'Curious', 'Creative'],
+                    typeSpeed: 50,
+                    loop: true
+                });
+
+                // Sección de proyectos
+                document.querySelector('#projects-title').textContent = translations.projects.title;
 
                 // Sección de educación
                 document.querySelector('#education-title').textContent = translations.education.title;
@@ -106,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Formulario de contacto
                 let contactTitle = document.querySelector('#contact-title');
                 contactTitle.firstChild.textContent = translations.contact.title + ' ';
+                document.querySelector('#contact-subtitle').textContent = translations.contact.subtitle;
                 document.querySelector('#contact-description').textContent = translations.contact.description;
                 document.querySelector('#contact-form-name').setAttribute('placeholder', translations.contact.form.name);
                 document.querySelector('#contact-form-email').setAttribute('placeholder', translations.contact.form.email);
@@ -114,6 +114,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#contact-form-button').textContent = translations.contact.form.button;
 
                 // Pie de página
+                document.querySelector('#footer-home').textContent = translations.footer.home;
+                document.querySelector('#footer-technologies').textContent = translations.footer.technologies;
+                document.querySelector('#footer-projects').textContent = translations.footer.projects;
+                document.querySelector('#footer-education').textContent = translations.footer.education;
+                document.querySelector('#footer-contact').textContent = translations.footer.contact;
                 let footerElement = document.querySelector('#footer-createdBy');
                 let spanElements = footerElement.querySelectorAll('span');
                 spanElements[0].textContent = translations.footer.site;
@@ -123,7 +128,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#small').textContent = translations.footer.partiallyCreated;
             });
         });
-    fetch('https://raw.githubusercontent.com/exluyt/Porfolio/main/languages/es.json')
+
+    fetch('../languages/es.json')
         .then(response => response.json())
         .then(translations => {
             document.querySelector('#es-flag').addEventListener('click', () => {
@@ -131,6 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#navbar-home span').textContent = translations.navbar.home;
                 document.querySelector('#navbar-education span').textContent = translations.navbar.education;
                 document.querySelector('#navbar-technologies span').textContent = translations.navbar.technologies;
+                document.querySelector('#navbar-projects span').textContent = translations.navbar.projects;
                 document.querySelector('#navbar-contact span').textContent = translations.navbar.contact;
 
                 // Sección de inicio
@@ -141,7 +148,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#hero-resume').textContent = translations.hero.resume;
                 document.querySelector('#hero-contact').textContent = translations.hero.contact;
 
+                // Links
+                document.querySelector('#resume-link').setAttribute('href', 'pdf/ArpadKiss_CV_programador.pdf');
+                document.querySelector('#linkedin-link').setAttribute('href', 'https://www.linkedin.com/in/arpad-kiss-dev');
 
+                // Traducir "I'm" a "Soy"
+                document.querySelector('#hero-typed').innerHTML = translations.hero.typed + ' <span id="element"></span>';
+
+                // Reinicializar Typed.js con las nuevas cadenas
+                typed.destroy();
+                typed = new Typed('#element', {
+                    strings: ['Desarrollador', 'Curioso', 'Creativo'],
+                    typeSpeed: 50,
+                    loop: true
+                });
+                // Sección de proyectos
+                document.querySelector('#projects-title').textContent = translations.projects.title;
 
                 // Sección de educación
                 document.querySelector('#education-title').textContent = translations.education.title;
@@ -161,6 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Formulario de contacto
                 let contactTitle = document.querySelector('#contact-title');
                 contactTitle.firstChild.textContent = translations.contact.title + ' ';
+                document.querySelector('#contact-subtitle').textContent = translations.contact.subtitle;
                 document.querySelector('#contact-description').textContent = translations.contact.description;
                 document.querySelector('#contact-form-name').setAttribute('placeholder', translations.contact.form.name);
                 document.querySelector('#contact-form-email').setAttribute('placeholder', translations.contact.form.email);
@@ -169,6 +192,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#contact-form-button').textContent = translations.contact.form.button;
 
                 // Pie de página
+                document.querySelector('#footer-home').textContent = translations.footer.home;
+                document.querySelector('#footer-technologies').textContent = translations.footer.technologies;
+                document.querySelector('#footer-projects').textContent = translations.footer.projects;
+                document.querySelector('#footer-education').textContent = translations.footer.education;
+                document.querySelector('#footer-contact').textContent = translations.footer.contact;
                 let footerElement = document.querySelector('#footer-createdBy');
                 let spanElements = footerElement.querySelectorAll('span');
                 spanElements[0].textContent = translations.footer.site;

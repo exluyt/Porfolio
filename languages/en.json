@@ -3,14 +3,18 @@
         "home": "Home",
         "education": "Education",
         "technologies": "Technologies",
+        "projects": "Projects",
         "contact": "Contact me"
     },
     "hero": {
         "hello": "Hello, I'm",
         "typed":"I'm",
-        "description": "I'm a programmer with knowledge in web design and application development. Also, I aim towards new horizons like video game programming.",
+        "description": "I'm a programmer with knowledge in web design and Android & iOS development. Also, I aim towards new horizons like video game programming.",
         "resume": "Resume",
         "contact": "Contact me"
+    },
+    "projects": {
+        "title": "Projects"
     },  
     "education": {
         "title": "Education",
@@ -42,6 +46,7 @@
     "contact": {
         "title": "Contact",
         "me": "Me",
+        "subtitle": "Contact me",
         "description": "If you have any questions and/or want me to be part of your team, you can fill out the form or contact through these means:",
         "form": {
             "name": "Name",
@@ -52,6 +57,11 @@
         }
     },
     "footer": {
+        "home": "Home",
+        "technologies": "Technologies",
+        "projects": "Projects",
+        "education": "Education",
+        "contact": "Contact me",
         "site": "Site",
         "createdBy": "created by",
         "partiallyCreated": "Partially created with AI"
