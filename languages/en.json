@@ -21,13 +21,18 @@
         "timeline": [
             {
                 "year": "2021-2023",
-                "title": "Bachelor's Degree",
+                "title": "Bachelor's Degree (I.E.S Narcís Monturiol)",
                 "description": "Social sciences branch that gave me teamwork skills and ability to work under pressure"
             },
             {
                 "year": "2023-Present",
-                "title": "Higher Technician in Multiplatform Application Development",
+                "title": "Higher Technician in Multiplatform Application Development (UEM)",
                 "description": "I acquired knowledge of Back-End programming (Java) and Front-End (HTML5, CSS, JavaScript) and also a real vision of work today"
+            },
+            {
+                "year": "2024-Present",
+                "title": "Computer Engineering, programming in C (42 Madrid)",
+                "description": "A disruptive learning experience where I learn to program in C from my peers while improving my interpersonal skills by helping others with their projects"
             },
             {
                 "year": "2024",

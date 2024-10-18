@@ -38,6 +38,7 @@
     text-decoration: none;
     font-family: "poppins", sans-serif;
     scroll-behavior: smooth;
+    scrollbar-color: var(--main-color) var(--background-color);
 }
 
 body {

@@ -21,13 +21,18 @@
         "timeline": [
             {
                 "year": "2021-2023",
-                "title": "Bachillerato",
+                "title": "Bachillerato (I.E.S Narcís Monturiol)",
                 "description": "Rama de ciencias sociales que me otorgo capacidades de trabajo en equipo y trabajar bajo presiónre"
             },
             {
                 "year": "2023-Actualidad",
-                "title": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
+                "title": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (UEM)",
                 "description": "Adquirí conocimientos de programación Back-End (Java) y Front-End (HTML5, CSS, JavaScript) y también una visión real del trabajo en la actualidad"
+            },
+            {
+                "year": "2024-Actualidad",
+                "title": "Ingeniería Informática, programación en C (42 Madrid)",
+                "description": "Un aprendizaje disruptivo en el que aprendo de mis compañeros a programar en C mientras mejoro en mis habilidades interpersonales ayudando al resto en sus proyectos"
             },
             {
                 "year": "2024",
