@@ -184,8 +184,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#mini').textContent = translations.projects.mini;
                 document.querySelector('#galaxy-title').textContent = translations.projects.galaxyTitle;
                 document.querySelector('#galaxy').textContent = translations.projects.galaxy;
-                document.querySelector('#bot-title').textContent = translations.projects.botTitle;
-                document.querySelector('#bot').textContent = translations.projects.bot;
                 document.querySelector('#fortytwo-title').textContent = translations.projects.fortytwoTitle;
                 document.querySelector('#fortyTwo').textContent = translations.projects.fortytwo;
 
