@@ -96,8 +96,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#galaxy').textContent = translations.projects.galaxy;
                 document.querySelector('#bot-title').textContent = translations.projects.botTitle;
                 document.querySelector('#bot').textContent = translations.projects.bot;
-                document.querySelector('#fortyTwo-title').textContent = translations.projects.fortyTwo;
-                document.querySelector('#fortyTwo').textContent = translations.projects.fortyTwoDescription;
+                document.querySelector('#fortyTwo-title').textContent = translations.projects.fortytwoTitle;
+                document.querySelector('#fortyTwo').textContent = translations.projects.fortytwo;
 
                 // Sección de educación
                 document.querySelector('#education-title').textContent = translations.education.title;
@@ -186,8 +186,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#galaxy').textContent = translations.projects.galaxy;
                 document.querySelector('#bot-title').textContent = translations.projects.botTitle;
                 document.querySelector('#bot').textContent = translations.projects.bot;
-                document.querySelector('#fortyTwo-title').textContent = translations.projects.fortyTwo;
-                document.querySelector('#fortyTwo').textContent = translations.projects.fortyTwoDescription;
+                document.querySelector('#fortyTwo-title').textContent = translations.projects.fortytwoTitle;
+                document.querySelector('#fortyTwo').textContent = translations.projects.fortytwo;
 
                 // Sección de educación
                 document.querySelector('#education-title').textContent = translations.education.title;
