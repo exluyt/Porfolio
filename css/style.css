@@ -4,31 +4,13 @@
 
 :root {
     color-scheme: light dark;
+    --main-color: #ffc340;
+    --text-color: white;
+    --background-color: black;
+    --hover-color: white;
+    --footer-color: #1b1b1b;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --main-color: #ffc340;
-        --text-color: white;
-        --background-color: black;
-        --hover-color: white;
-        --footer-color: #1b1b1b;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --main-color: #fa9e0a;
-        --text-color: black;
-        --background-color: rgb(255, 255, 255);
-        --hover-color: black;
-        --footer-color: #eeeeee;
-    }
-
-    footer p span {
-        color: #C2790A;
-    }
-}
 
 * {
     padding: 0;
@@ -468,6 +450,7 @@ ul li p:hover:after {
     flex-direction: row;
 }
 .project_sec{
+    height: 35rem;
     border: 1px solid var(--main-color);
     padding: 30px;
 }
@@ -481,7 +464,7 @@ ul li p:hover:after {
 }
 
 .project_user{
-    margin-top: 30px;
+    margin-top: 60%;
     display: flex;
     gap: 20px;
 }
@@ -494,14 +477,9 @@ ul li p:hover:after {
 }
 
 .ruta {
-    width: 25%;
-    background-color: white;
-}
-
-.ruta2 {
-    width: 70%;
-    background-color: white;
-    margin-bottom: 5%;
+    position: fixed;
+    width: 88%;
+    border-radius: 5%;
 }
 
 .icon-text a {
@@ -528,6 +506,10 @@ ul li p:hover:after {
     border-radius: 10px;
     color: var(--background-color);
     background-color: var(--main-color);
+}
+
+#mini {
+    font-size: 0.7rem;
 }
 /* contact */
 
@@ -771,6 +753,12 @@ footer p span {
         cursor: pointer;
         width: 40px;
     }
+
+    .ruta {
+        position: fixed;
+        width: 82%;
+        border-radius: 5%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -817,6 +805,12 @@ footer p span {
     .flags {
         cursor: pointer;
         width: 40px;
+    }
+
+    .ruta {
+        position: fixed;
+        width: 84%;
+        border-radius: 5%;
     }
 }
 
@@ -869,6 +863,12 @@ footer p span {
         cursor: pointer;
         width: 10%;
         margin-left: 45%;
+    }
+
+    .ruta {
+        position: fixed;
+        width: 84%;
+        border-radius: 5%;
     }
 }
 
@@ -937,99 +937,9 @@ footer p span {
         width: 10%;
         margin-left: 45%;
     }
-}
-/*
-/* CSS 
-.button-78 {
-    align-items: center;
-    appearance: none;
-    background-clip: padding-box;
-    background-color: initial;
-    background-image: none;
-    border-style: none;
-    box-sizing: border-box;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    flex-direction: row;
-    flex-shrink: 0;
-    font-family: Eina01, sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    justify-content: center;
-    line-height: 24px;
-    margin: 0;
-    min-height: 64px;
-    outline: none;
-    overflow: visible;
-    padding: 19px 26px;
-    pointer-events: auto;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    width: auto;
-    word-break: keep-all;
-    z-index: 0;
-
-}
-
-@media (min-width: 768px) {
-    .button-78 {
-        padding: 19px 32px;
+    .ruta {
+        position: fixed;
+        width: 73%;
+        border-radius: 5%;
     }
 }
-
-.button-78:before,
-.button-78:after {
-    border-radius: 80px;
-}
-
-.button-78:before {
-    background-image: linear-gradient(92.83deg, #d3a541 0, var(--main-color) 100%);
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -2;
-}
-
-.button-78:after {
-    background-color: initial;
-    background-image: linear-gradient(#000000 0, #000000 100%);
-    bottom: 4px;
-    content: "";
-    display: block;
-    left: 4px;
-    overflow: hidden;
-    position: absolute;
-    right: 4px;
-    top: 4px;
-    transition: all 50ms ease-out;
-    z-index: -1;
-
-}
-
-.button-78:hover {
-    filter: drop-shadow(0 0 30px var(--main-color));
-
-}
-
-.button-78:hover:not(:disabled):after {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    transition-timing-function: ease-in;
-    opacity: 0;
-
-}
-*/
