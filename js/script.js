@@ -86,6 +86,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Sección de proyectos
                 document.querySelector('#projects-title').textContent = translations.projects.title;
+                document.querySelectorAll('.code').forEach(element => {
+                    element.textContent = translations.projects.code;
+                });
+                document.querySelector('#rsb').textContent = translations.projects.rsb;
+                document.querySelector('#cine').textContent = translations.projects.cine;
+                document.querySelector('#mini').textContent = translations.projects.mini;
+                document.querySelector('#galaxy-title').textContent = translations.projects.galaxyTitle;
+                document.querySelector('#galaxy').textContent = translations.projects.galaxy;
+                document.querySelector('#bot-title').textContent = translations.projects.botTitle;
+                document.querySelector('#bot').textContent = translations.projects.bot;
+                document.querySelector('#fortyTwo-title').textContent = translations.projects.fortyTwo;
+                document.querySelector('#fortyTwo').textContent = translations.projects.fortyTwoDescription;
 
                 // Sección de educación
                 document.querySelector('#education-title').textContent = translations.education.title;
@@ -164,6 +176,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
                 // Sección de proyectos
                 document.querySelector('#projects-title').textContent = translations.projects.title;
+                document.querySelectorAll('.code').forEach(element => {
+                    element.textContent = translations.projects.code;
+                });
+                document.querySelector('#rsb').textContent = translations.projects.rsb;
+                document.querySelector('#cine').textContent = translations.projects.cine;
+                document.querySelector('#mini').textContent = translations.projects.mini;
+                document.querySelector('#galaxy-title').textContent = translations.projects.galaxyTitle;
+                document.querySelector('#galaxy').textContent = translations.projects.galaxy;
+                document.querySelector('#bot-title').textContent = translations.projects.botTitle;
+                document.querySelector('#bot').textContent = translations.projects.bot;
+                document.querySelector('#fortyTwo-title').textContent = translations.projects.fortyTwo;
+                document.querySelector('#fortyTwo').textContent = translations.projects.fortyTwoDescription;
 
                 // Sección de educación
                 document.querySelector('#education-title').textContent = translations.education.title;

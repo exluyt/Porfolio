@@ -14,7 +14,15 @@
         "contact": "Contact me"
     },
     "projects": {
-        "title": "Projects"
+        "title": "Projects",
+        "code": "Code",
+        "rsb": "Application for the management of complaints of defects in urban areas, facilitating their rapid repair.",
+        "cine": "Web for the visualization of information about movies",
+        "mini": "*The movie carousel moves with the keyboard arrows",
+        "galaxy-title": "Discord bot",
+        "galaxy": "Discord bot to improve the user experience on the server",
+        "fortytwo-title": "42 Projects",
+        "fortytwo": "Various projects in C on algorithms, architecture, logic, etc"
     },  
     "education": {
         "title": "Education",

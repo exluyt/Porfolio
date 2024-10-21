@@ -592,7 +592,6 @@ ul li p:hover:after {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border: 2px solid var(--text-color);
     padding: 20px;
 
 }
