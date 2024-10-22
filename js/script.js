@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true
     });
 
-    fetch("https://raw.githubusercontent.com/exluyt/Porfolio/refs/heads/main/languages/en.json")
+    fetch('https://raw.githubusercontent.com/exluyt/Porfolio/refs/heads/main/languages/en.json')
         .then(response => response.json())
         .then(translations => {
             document.querySelector('#uk-flag').addEventListener('click', () => {
@@ -94,10 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#mini').textContent = translations.projects.mini;
                 document.querySelector('#galaxy-title').textContent = translations.projects.galaxyTitle;
                 document.querySelector('#galaxy').textContent = translations.projects.galaxy;
-                document.querySelector('#bot-title').textContent = translations.projects.botTitle;
-                document.querySelector('#bot').textContent = translations.projects.bot;
                 document.querySelector('#fortytwo-title').textContent = translations.projects.fortytwoTitle;
-                document.querySelector('#fortyTwo').textContent = translations.projects.fortytwo;
+                document.querySelector('#fortytwo').textContent = translations.projects.fortytwo;
 
                 // Sección de educación
                 document.querySelector('#education-title').textContent = translations.education.title;
@@ -185,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#galaxy-title').textContent = translations.projects.galaxyTitle;
                 document.querySelector('#galaxy').textContent = translations.projects.galaxy;
                 document.querySelector('#fortytwo-title').textContent = translations.projects.fortytwoTitle;
-                document.querySelector('#fortyTwo').textContent = translations.projects.fortytwo;
+                document.querySelector('#fortytwo').textContent = translations.projects.fortytwo;
 
                 // Sección de educación
                 document.querySelector('#education-title').textContent = translations.education.title;
