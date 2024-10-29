@@ -836,7 +836,7 @@ footer p span {
     }
 
     .show {
-        height: 280px;
+        height: 21rem;
         padding: 30px;
     }
 
@@ -940,5 +940,9 @@ footer p span {
         position: fixed;
         width: 73%;
         border-radius: 5%;
+    }
+    
+    .button {
+        width: 150px;
     }
 }
