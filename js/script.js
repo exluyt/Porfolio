@@ -117,11 +117,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 contactTitle.firstChild.textContent = translations.contact.title + ' ';
                 document.querySelector('#contact-subtitle').textContent = translations.contact.subtitle;
                 document.querySelector('#contact-description').textContent = translations.contact.description;
-                document.querySelector('#contact-form-name').setAttribute('placeholder', translations.contact.form.name);
+/*                 document.querySelector('#contact-form-name').setAttribute('placeholder', translations.contact.form.name);
                 document.querySelector('#contact-form-email').setAttribute('placeholder', translations.contact.form.email);
                 document.querySelector('#contact-form-subject').setAttribute('placeholder', translations.contact.form.subject);
                 document.querySelector('#contact-form-message').setAttribute('placeholder', translations.contact.form.message);
-                document.querySelector('#contact-form-button').textContent = translations.contact.form.button;
+                document.querySelector('#contact-form-button').textContent = translations.contact.form.button; */
 
                 // Pie de página
                 document.querySelector('#footer-home').textContent = translations.footer.home;
@@ -205,11 +205,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 contactTitle.firstChild.textContent = translations.contact.title + ' ';
                 document.querySelector('#contact-subtitle').textContent = translations.contact.subtitle;
                 document.querySelector('#contact-description').textContent = translations.contact.description;
-                document.querySelector('#contact-form-name').setAttribute('placeholder', translations.contact.form.name);
+/*                 document.querySelector('#contact-form-name').setAttribute('placeholder', translations.contact.form.name);
                 document.querySelector('#contact-form-email').setAttribute('placeholder', translations.contact.form.email);
                 document.querySelector('#contact-form-subject').setAttribute('placeholder', translations.contact.form.subject);
                 document.querySelector('#contact-form-message').setAttribute('placeholder', translations.contact.form.message);
-                document.querySelector('#contact-form-button').textContent = translations.contact.form.button;
+                document.querySelector('#contact-form-button').textContent = translations.contact.form.button; */
 
                 // Pie de página
                 document.querySelector('#footer-home').textContent = translations.footer.home;
