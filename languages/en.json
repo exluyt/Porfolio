@@ -60,7 +60,7 @@
         "title": "Contact",
         "me": "Me",
         "subtitle": "Contact me",
-        "description": "If you have any questions and/or want me to be part of your team, you can fill out the form or contact through these means:",
+        "description": "If you have any questions and/or want me to be part of your team, you can contact through these means:",
         "form": {
             "name": "Name",
             "email": "Email",

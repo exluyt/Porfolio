@@ -60,7 +60,7 @@
         "title": "Contácta",
         "me": "Me",
         "subtitle": "Contáctame",
-        "description": "Si tienes alguna duda y/o quieres que forme parte de tu equipo , puedes rellenar el formulario o contactar a través de estos medios:",
+        "description": "Si tienes alguna duda y/o quieres que forme parte de tu equipo , puedes contactar a través de estos medios:",
         "form": {
             "name": "Nombre",
             "email": "Email",
