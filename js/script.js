@@ -44,6 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    document.addEventListener("click", (event) => {
+        if (!nav.contains(event.target) && !bars.contains(event.target)) {
+            nav.classList.remove("show");
+        }
+    });
+
     let typed = new Typed('#element', {
         strings: ['Desarrollador', 'Curioso', 'Creativo'],
         typeSpeed: 50,

@@ -28,11 +28,6 @@
         "title": "Educación",
         "timeline": [
             {
-                "year": "2021-2023",
-                "title": "Bachillerato (I.E.S Narcís Monturiol)",
-                "description": "Rama de ciencias sociales que me otorgo capacidades de trabajo en equipo y trabajar bajo presiónre"
-            },
-            {
                 "year": "2023-Actualidad",
                 "title": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (UEM)",
                 "description": "Adquirí conocimientos de programación Back-End (Java) y Front-End (HTML5, CSS, JavaScript) y también una visión real del trabajo en la actualidad"
@@ -46,6 +41,11 @@
                 "year": "2024",
                 "title": "OpenBootcamp",
                 "description": "A través de vídeos mejoré mis capacidades de pensamiento crítico en un bootcamp de desarrollo de videojuegos en Unity con C#"
+            },
+            {
+                "year": "2021-2023",
+                "title": "Bachillerato (I.E.S Narcís Monturiol)",
+                "description": "Rama de ciencias sociales que me otorgo capacidades de trabajo en equipo y trabajar bajo presiónre"
             }
         ]
     },
