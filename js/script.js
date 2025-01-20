@@ -1,4 +1,90 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const userLang = navigator.language || navigator.userLanguage;
+    const lang = userLang.startsWith('es') ? 'es' : 'en';
+    const translationsUrl = lang === 'en' ? 'https://raw.githubusercontent.com/exluyt/Porfolio/refs/heads/main/languages/en.json' : 'https://raw.githubusercontent.com/exluyt/Porfolio/refs/heads/main/languages/es.json';
+
+    fetch(translationsUrl)
+        .then(response => response.json())
+        .then(translations => {
+            // Barra de navegación
+            document.querySelector('#navbar-home span').textContent = translations.navbar.home;
+            document.querySelector('#navbar-education span').textContent = translations.navbar.education;
+            document.querySelector('#navbar-technologies span').textContent = translations.navbar.technologies;
+            document.querySelector('#navbar-projects span').textContent = translations.navbar.projects;
+            document.querySelector('#navbar-contact span').textContent = translations.navbar.contact;
+
+            // Sección de inicio
+            let helloElement = document.querySelector('#hero-hello');
+            let spanContent = helloElement.querySelector('span').outerHTML;
+            helloElement.innerHTML = translations.hero.hello + ' ' + spanContent;
+            document.querySelector('#hero-description').textContent = translations.hero.description;
+            document.querySelector('#hero-resume').textContent = translations.hero.resume;
+            document.querySelector('#hero-contact').textContent = translations.hero.contact;
+
+            // Links
+            document.querySelector('#resume-link').setAttribute('href', lang === 'en' ? 'pdf/ArpadKiss_Resume_developer.pdf' : 'pdf/ArpadKiss_CV_programador.pdf');
+            document.querySelector('#linkedin-link').setAttribute('href', 'https://www.linkedin.com/in/arpad-kiss-dev' + (lang === 'en' ? '/?locale=en_US' : ''));
+
+            // Traducir "Soy" a "I'm" o viceversa
+            document.querySelector('#hero-typed').innerHTML = translations.hero.typed + ' <span id="element"></span>';
+
+            // Reinicializar Typed.js con las nuevas cadenas
+            let typed = new Typed('#element', {
+                strings: lang === 'en' ? ['Developer', 'Curious', 'Creative'] : ['Desarrollador', 'Curioso', 'Creativo'],
+                typeSpeed: 50,
+                loop: true
+            });
+
+            // Sección de proyectos
+            document.querySelector('#projects-title').textContent = translations.projects.title;
+            document.querySelectorAll('.code').forEach(element => {
+                element.textContent = translations.projects.code;
+            });
+            document.querySelector('#rsb').textContent = translations.projects.rsb;
+            document.querySelector('#cine').textContent = translations.projects.cine;
+            document.querySelector('#mini').textContent = translations.projects.mini;
+            document.querySelector('#galaxy-title').textContent = translations.projects.galaxyTitle;
+            document.querySelector('#galaxy').textContent = translations.projects.galaxy;
+            document.querySelector('#fortytwo-title').textContent = translations.projects.fortytwoTitle;
+            document.querySelector('#fortytwo').textContent = translations.projects.fortytwo;
+            document.querySelector('#ppt-title').textContent = translations.projects.pptTitle;
+            document.querySelector('#ppt').textContent = translations.projects.ppt;
+
+            // Sección de educación
+            document.querySelector('#education-title').textContent = translations.education.title;
+            translations.education.timeline.forEach((item, index) => {
+                document.querySelector(`#education-year-${index}`).textContent = item.year;
+                document.querySelector(`#education-title-${index}`).textContent = item.title;
+                document.querySelector(`#education-description-${index}`).textContent = item.description;
+            });
+
+            // Sección de tecnologías
+            document.querySelector('#technologies-title').textContent = translations.technologies.title;
+            document.querySelector('#technologies-frontEnd').textContent = translations.technologies.frontEnd;
+            document.querySelector('#technologies-backEnd').textContent = translations.technologies.backEnd;
+            document.querySelector('#technologies-learning').textContent = translations.technologies.learning;
+            document.querySelector('#technologies-tools').textContent = translations.technologies.tools;
+
+            // Formulario de contacto
+            let contactTitle = document.querySelector('#contact-title');
+            contactTitle.firstChild.textContent = translations.contact.title + ' ';
+            document.querySelector('#contact-subtitle').textContent = translations.contact.subtitle;
+            document.querySelector('#contact-description').textContent = translations.contact.description;
+
+            // Pie de página
+            document.querySelector('#footer-home').textContent = translations.footer.home;
+            document.querySelector('#footer-technologies').textContent = translations.footer.technologies;
+            document.querySelector('#footer-projects').textContent = translations.footer.projects;
+            document.querySelector('#footer-education').textContent = translations.footer.education;
+            document.querySelector('#footer-contact').textContent = translations.footer.contact;
+            let footerElement = document.querySelector('#footer-createdBy');
+            let spanElements = footerElement.querySelectorAll('span');
+            spanElements[0].textContent = translations.footer.site;
+
+            let textNode = footerElement.childNodes[1];
+            textNode.textContent = ' ' + translations.footer.createdBy + ' ';
+            document.querySelector('#small').textContent = translations.footer.partiallyCreated;
+        });
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -102,6 +188,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#galaxy').textContent = translations.projects.galaxy;
                 document.querySelector('#fortytwo-title').textContent = translations.projects.fortytwoTitle;
                 document.querySelector('#fortytwo').textContent = translations.projects.fortytwo;
+                document.querySelector('#ppt-title').textContent = translations.projects.pptTitle;
+                
 
                 // Sección de educación
                 document.querySelector('#education-title').textContent = translations.education.title;
@@ -190,6 +278,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#galaxy').textContent = translations.projects.galaxy;
                 document.querySelector('#fortytwo-title').textContent = translations.projects.fortytwoTitle;
                 document.querySelector('#fortytwo').textContent = translations.projects.fortytwo;
+                document.querySelector('#ppt-title').textContent = translations.projects.pptTitle;
+                document.querySelector('#ppt').textContent = translations.projects.ppt;
 
                 // Sección de educación
                 document.querySelector('#education-title').textContent = translations.education.title;

@@ -22,7 +22,9 @@
         "galaxyTitle": "Discord bot",
         "galaxy": "Discord bot to improve the user experience on the server",
         "fortytwoTitle": "42 Projects",
-        "fortytwo": "Various projects in C on algorithms, architecture, logic, etc"
+        "fortytwo": "Various projects in C on algorithms, architecture, logic, etc",
+        "pptTitle": "Rock, paper and scissors with sockets",
+        "ppt": "The rock paper and scissors game made with sockets with options for public and private games."
     },  
     "education": {
         "title": "Education",

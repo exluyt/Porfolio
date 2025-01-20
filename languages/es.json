@@ -22,7 +22,9 @@
         "galaxyTitle": "Bot de discord",
         "galaxy": "Bot de discord para mejorar la experiencia del usuario en el servidor",
         "fortytwoTitle": "Proyectos de 42",
-        "fortytwo": "Diversos proyectos en C sobre algoritmos, arquitectura, lógica, etc"
+        "fortytwo": "Diversos proyectos en C sobre algoritmos, arquitectura, lógica, etc",
+        "ppt-title": "Piedra, papel y tijera con sockets",
+        "ppt": "El juego de piedra papel y tijera realizado con sockets con opciones de partidas públicas y privadas."
     },  
     "education": {
         "title": "Educación",
