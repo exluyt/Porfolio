@@ -189,6 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('#fortytwo-title').textContent = translations.projects.fortytwoTitle;
                 document.querySelector('#fortytwo').textContent = translations.projects.fortytwo;
                 document.querySelector('#ppt-title').textContent = translations.projects.pptTitle;
+                document.querySelector('#ppt').textContent = translations.projects.ppt;
                 
 
                 // Sección de educación
