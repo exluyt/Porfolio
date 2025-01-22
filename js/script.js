@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    //Scroll animation for dividers
+    window.addEventListener('scroll', function() {
+        const scrollAnimations = document.querySelectorAll('.custom-shape-divider-bottom-1737395171 svg');
+        const scrollPosition = window.scrollY;
+        scrollAnimations.forEach(scrollAnimation => {
+            scrollAnimation.style.transform = `translateX(${scrollPosition * 1}px)`;
+        });
+    });
+
+    window.addEventListener('scroll', function() {
+        const scrollAnimations = document.querySelectorAll('.custom-shape-divider-top-1737395466 svg');
+        const scrollPosition = window.scrollY;
+        scrollAnimations.forEach(scrollAnimation => {
+            scrollAnimation.style.transform = `translateX(${scrollPosition * -1}px)`;
+        });
+    });
+
     const userLang = navigator.language || navigator.userLanguage;
     const lang = userLang.startsWith('es') ? 'es' : 'en';
     const translationsUrl = lang === 'en' ? 'https://raw.githubusercontent.com/exluyt/Porfolio/refs/heads/main/languages/en.json' : 'https://raw.githubusercontent.com/exluyt/Porfolio/refs/heads/main/languages/es.json';
