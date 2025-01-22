@@ -2,9 +2,10 @@
 
 
 .custom-shape-divider-bottom-1737395171 {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
+    top: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
