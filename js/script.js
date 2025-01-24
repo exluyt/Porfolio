@@ -2,18 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Scroll animation for dividers
     window.addEventListener('scroll', function() {
-        const scrollAnimations = document.querySelectorAll('.custom-shape-divider-bottom-1737395171 svg');
+        const scrollAnimations = document.querySelectorAll('#scroll');
         const scrollPosition = window.scrollY;
         scrollAnimations.forEach(scrollAnimation => {
-            scrollAnimation.style.transform = `translateX(${scrollPosition * 1}px)`;
-        });
-    });
-
-    window.addEventListener('scroll', function() {
-        const scrollAnimations = document.querySelectorAll('.custom-shape-divider-top-1737395466 svg');
-        const scrollPosition = window.scrollY;
-        scrollAnimations.forEach(scrollAnimation => {
-            scrollAnimation.style.transform = `translateX(${scrollPosition * -1}px)`;
+            scrollAnimation.style.transform = `translateX(${scrollPosition * 0.5}px)`;
         });
     });
 
